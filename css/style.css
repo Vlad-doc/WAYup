@@ -1,0 +1,246 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgb(78,191,254);
+    background: linear-gradient(90deg, rgba(78,191,254,1) 35%, rgba(55,143,217,1) 100%);
+    padding-top: 62px;
+    padding-bottom: 73px;
+}
+
+.unification {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.dream h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 37px;
+    line-height: 49px;
+}
+
+.dream span {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 59px;
+    line-height: 73px;
+}
+
+.aspiration {
+    width: 390px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.dreamText {
+    display: block;
+    background: #ffd429;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 46px;
+    transition: all 0.3s ease;
+}
+
+.dreamText:hover {
+    background: #c8c5b8;
+}
+
+.future {
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 70px;
+    padding-bottom: 83px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.freeTime {
+    text-align: center;
+    width: 285px;
+}
+
+.img_small {
+    height: 75px;
+}
+
+.freeTime h3 {
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.info {
+    background: #ecf3f8;
+}
+
+.freeTime p {
+    font-size: 15px;
+}
+
+.info {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}    
+
+form {
+    margin-top: 57px;
+}
+
+.vvod {
+    display: block;
+    margin: 0 auto;
+    width: 342px;
+    height: 47px;
+    margin-bottom: 15px;
+    padding-left: 23px;
+}
+
+.btn {
+    display: block;
+    background: #ffd429;
+    text-align: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 342px;
+    height: 47px;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background: #c8c5b8;
+}
+
+.credits {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    padding: 64px 0;
+    background: #164d7a;
+    
+}
+
+.animate__animated {
+    opacity: 0;
+} 
+
+.third.animate__animated {
+    animation-delay: 1s;
+}
+
+.second.animate__animated {
+    animation-delay: 0.5s;
+}
+
+.first.animate__animated {
+    animation-delay: 0s;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .unification{
+        flex-direction: column;
+    }
+    br {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    } 
+    .mainImage {
+        text-align: center;
+    }
+    .dream {
+        width: auto;
+    }
+    .aspiration {
+        width: auto;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .Img {
+        width: 550px;
+    }
+    .time {
+        flex-direction: column;
+    }
+    .freeTime {
+        width: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .dreamText {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Img {
+        width: 325px;
+    }
+    .vvod {
+        width: 90%;
+    }
+    .btn {
+        width: 90%;
+    }
+}
